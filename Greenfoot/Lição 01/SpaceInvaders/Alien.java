@@ -19,6 +19,12 @@ public class Alien extends Actor
         move(pX);
         if (isAtEdge()){
             pX *= -1; // pX = pX * -1;
+            setLocation(getX(), getY()+30);
+        }
+        //Se tocar a nave, é fim de jogo
+        if (isTouching(Nave.class)){
+            getWorld().showText("GAME OVER", 400, 300);
+            Greenfoot.stop();
         }
     }
 }
