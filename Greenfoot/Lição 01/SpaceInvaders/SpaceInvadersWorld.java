@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class SpaceInvadersWorld extends World
 {
-
     /**
      * Constructor for objects of class SpaceInvadersWorld.
      * 
@@ -29,5 +28,5 @@ public class SpaceInvadersWorld extends World
         addObject(alien,398,32);
         Nave nave = new Nave();
         addObject(nave,372,564);
-    }
+    }    
 }
